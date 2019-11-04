@@ -1,0 +1,82 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+h1{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:700px;
+	margin: -280px 0 0 -420px;
+	font-family:Myriad pro;
+	font-size:40px;
+	background: -webkit-linear-gradient(right, white 5%,grey);
+	height:60px;
+	padding:20px;
+	line-height:60px;
+}
+body{
+	font-family:myriad pro;
+}
+#new_message_box{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -180px 0 0 -420px;
+	padding:15px;
+	width:250px;
+	height:110px;
+	background-color:burlywood;
+}
+#show_message_box{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -180px 0 0 -141px;
+	padding:15px;
+	width:400px;
+	height:110px;
+	background-color:wheat;
+}
+.in_out_box{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -40px 0 0 -420px;
+	padding:15px;
+	width:325px;
+	height:300px;
+	background-color:rosybrown;
+}
+#inbox_box{
+	margin: -40px 0 0 -420px;
+	background-color:rosybrown;
+}
+#outbox_box{
+	margin: -40px 0 0 -66px;
+	background-color:peru;
+}
+#show_inbox,#show_outbox{
+	border:1px solid black;
+	width:100%;
+}
+.msg_details{
+	position:fixed;
+	left:50%;
+	top:50%;
+	display:none;
+	
+	margin: -145px 0 0 -141px;
+	padding:0px 15px;
+	width:400px;
+	height:103px;
+	background-color:wheat;
+}
+
+.inbox_msg:hover+.msg_details{
+	display:block;
+}
+th{
+	text-align:left;
+}

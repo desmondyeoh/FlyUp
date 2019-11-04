@@ -1,0 +1,1 @@
+$("*").css({position: 'relative', left: '-9999px'})

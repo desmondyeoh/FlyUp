@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jQuery\jQuery.js"></script>
+		<script src="jQuery\hangar.js"></script>
+		<script src="js\jStorage.js"></script>
+		<script src="js\script_v2.js"></script>
+		<script src="js\CUSER_check.js"></script>
+		<script src="jQuery\test.js"></script>
+		<script>
+			setTimeout(function(){
+				if (USER[CUI].plane.length==0){
+					document.getElementById("new_plane_box").style.display = "block";
+					if (USER[CUI].paper ==0){
+						showPaperBox();
+					}
+				}else{
+					document.getElementById("show_plane_box").style.display = "block";
+				}
+				document.getElementById("gender").innerHTML = USER[CUI].gender.toUpperCase();
+				document.getElementById("horoscope").innerHTML = USER[CUI].horoscope.toUpperCase();
+			},200);
+		</script>
+		<link rel="stylesheet" href="css\hangar.css"/>
+		<link rel="stylesheet" href="css\global.css"/>
+	</head>
+	<body>
+		<!--FUELBAR-->
+		<div id="fuelbar">FUEL<br><div id = "show_fuelbar_num"></div></div>
+		<!--NAVBAR-->
+		<div id='navbar'>
+			<ul><div id='main'>MENU</div>
+				<a href="index.html"><li class="navtab" id="n1">Index</li></a>
+				<a href="buzz.html"><li class="navtab" id="n2">Buzz</li></a>
+				<a href="about.html"><li class="navtab" id="n3">About</li></a>
+				<li class="navtab_big" id="nb2">PLANE
+					<ul>
+						<a href="hangar.html"><li class="navtab" id="n4">Hangar</li></a>
+						<a href="p2.html"><li class="navtab" id="n5">P2</li></a>
+						<a href="sky.html"><li class="navtab" id="n6">Sky</li></a>
+					</ul>
+				</li>
+				<li class="navtab_big" id="nb1">USER
+					<ul>
+						<a href="user_home.html"><li class="navtab" id="n7">Home</li></a>
+						<a href="message.html"><li class="navtab" id="n8">Message</li></a>
+						<a href="settings.html"><li class="navtab" id="n9">Settings</li></a>
+						<a href="#" onClick="logOut()"><li class="navtab" id="n10">Logout</li></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--NAVBAR-->
+		<div id="navbar2">
+			<ul>
+			
+				<li onClick="showNewPlaneBox()">New Plane</li>
+				<li onClick="showShowPlaneBox()">Hangar</li>
+				<li onClick="showPaperBox()">Paper shop</li>
+					
+			</ul>
+		</div>
+		<!--new Plane box-->
+		<div class="new_plane_box" id="new_plane_box">
+			<h1>Awesome! Now Let's make a new plane!</h1>
+			<div class="plane_obj"><img src="img/plane2.gif"></div>
+			<div class="new_plane_form">
+				<form name="new_plane"/>
+					<strong>Gender: </strong><a id="gender"></a><br/>
+					<strong>Horoscope:</strong><a id="horoscope"></a>
+					<br>
+					<strong>Your interest: </strong><br/>
+					<input type="radio" id="interest1" name="d3" value="music">Music<br>
+					<input type="radio" id="interest2" name="d3" value="movie">Movie<br>
+					<input type="radio" id="interest3" name="d3" value="reading">Reading<br>
+					<input type="radio" id="interest4" name="d3" value="eating">Eating<br>	
+					
+					<strong>Talk about yourself!</strong><br/>
+					What do you do for fun?<br/>
+					<input type="text" name="c1"/><br/>
+					What's one of the strangest things you ever done?<br/>
+					<input type="text" name="c2"/><br/>
+					What's the biggest lie you ever told?!<br/>
+					<input type="text" name="c3"/><br/>
+					Something you wish people to know about you, really..<br/>
+					<input type="text" name="c4"/><br/>
+					<input type= "button" onClick = "submitNewPlane()" value="Give birth to the new plane!"/>
+				</form>
+			</div>
+		</div>
+		<!--show Plane box-->
+		<div class="show_plane_box" id="show_plane_box">
+			<h1>The Hangar</h1>
+			<div class="hangar_table">
+				<div id="hangar_plane_box">asf</div>
+				<div id="details_container"></div>
+			</div>
+		</div>
+		<!--buy Paper box-->
+		<div class="buy_paper_box" id="buy_paper_box">
+			
+			<div class="paper_form">
+				<strong>BUY/ SELL Paper</strong><br>
+				You have <span id="show_paper_num2"></span> paper(s) and <span id="show_fuel_num"></span> fuel..<br>
+				Paper Price: 10(BUY), 8(SELL)<br>
+				<form name="paper"/>
+					
+					<strong>buy</strong><input type="text" name="buy" size=2/>
+					<strong>sell </strong><input type="text" name="sell" size=2/><br>
+					<input type= "button" onClick = "submitPaper()" value="DEAL!"/>
+				</form>
+			</div>
+		</div>
+		
+		<!--fuel Plane box-->
+		<div class="fuel_plane_box" id="fuel_plane_box">
+			<div class="fuel_plane">
+				<strong>Fuel Plane</strong><br>
+				<p>Click 'Z' and 'X' repeatelly to fuel plane</p>
+				<div id="show_fuel_process">FUEL</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+body{
+	font-family:myriad pro;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+#navbar{
+	display:block;
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	z-index:6;
+}
+#navbar li,#navbar ul{
+	position:fixed;
+	text-align:center;
+	right:0px;
+	bottom:0px;
+	list-style-type:none;
+}
+#navbar li{
+	font-size:10px;
+	width:60px;
+	height:60px;
+	right:0px;
+	border-radius:50px;
+	color:white;
+	font-size:30px;
+	line-height:55px;
+	background-color:purple;
+	display:none;
+}
+
+#navbar #main{
+	position:fixed;
+	bottom:-10px;
+	right:-40px;
+	width:240px;
+	height:240px;
+	border-radius:120px;
+	color:white;
+	font-size:30px;
+	line-height:240px;
+	background-color:plum;
+	-webkit-animation:rotate 8s infinite linear;
+}
+#navbar .navtab{
+	font-size:14px;
+	background-color:thistle;
+	
+	-webkit-animation:rotate 2s infinite linear;
+}
+
+#navbar .navtab_big{
+	font-size:20px;
+	width:105px;
+	height:105px;
+	border-radius:55px;
+	line-height:100px;
+}
+#navbar #nb1{
+	position:fixed;
+	right:-10px;
+	bottom:200px;
+}
+#navbar #nb2{
+	position:fixed;
+	right:135px;
+	bottom:150px;
+	background-color:blueviolet;
+}
+#navbar #n1{
+	right:190px;
+	bottom:80px;
+}
+#navbar #n2{
+	right:190px;
+	bottom:30px;
+}
+#navbar #n3{
+	right:165px;
+	bottom:-10px;
+}
+#navbar #n4{
+	right:160px;
+	bottom:240px;
+}
+#navbar #n5{
+	right:215px;
+	bottom:215px;
+}
+#navbar #n6{
+	right:230px;
+	bottom:155px;
+}
+#navbar #n7{
+	right:-5px;
+	bottom:290px;
+}
+#navbar #n8{
+	right:45px;
+	bottom:285px;
+}
+#navbar #n9{
+	right:80px;
+	bottom:255px;
+}
+#navbar #n10{
+	right:80px;
+	bottom:210px;
+}
+
+#navbar ul:hover li{
+	display:block;
+}
+#navbar ul:hover li li{
+	display:none;
+}
+#navbar ul li:hover li{
+	display:block;
+}
+
+@-webkit-keyframes rotate{
+	0%{-webkit-transform:rotate(15deg);}
+	25%{-webkit-transform:rotate(-15deg);}
+	50%{-webkit-transform:rotate(15deg);}
+	75%{-webkit-transform:rotate(-15deg);}
+	100%{-webkit-transform:rotate(15deg);}
+}
+#fuelbar{
+	display:none;
+	position:fixed;
+	right:0px;
+	top:0px;
+	width:100px;
+	height:120px;
+	background-color:palegreen;
+	border-bottom-left-radius:600px;
+	text-align:right;
+	padding:10px 40px 0 0;
+	font-size:20px;
+}
+#show_fuelbar_num{
+	font-size:40px;
+}

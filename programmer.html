@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js\jStorage.js"></script>
+		<script src="js\script_v2.js"></script>
+	</head>
+	<body>
+	<div style="float:left;width:20%;">
+		
+		___HANGAR PLANE___
+		<div id="show_hangar_plane">showHangarPlane() function not working</div><br/>
+		___SHOOT de PLANE___
+		<div id="show_plane2">showPlane2() function not working</div><br/>
+		___SKY PLANE___
+		<div id="show_sky_planeP">showSkyPlane() function not working</div><br/>
+		___MESSAGES___
+		<div id="show_message">showMessage() not working</div><br/>
+		<div id="show_all">show() function not working</div><br/>
+	</div>
+
+	<div style= "float:right;width:50%;">
+			___FUNCTIONS___<br/>
+			<input type="button" onClick="createDefault()" value="Default planes"/>
+			<input type="button" onClick ="flush()" value="flush!!"/>
+			<br/>
+			<input type="button" onClick="logOut()" value="logOut"/>
+			<br/>___SIGN UP___<br/>
+			<form name="sign_up">
+				name<input type="text" name="name"/>
+				gender<input type="radio" name="gender" id="male_radio" value="male"checked>Male
+				<input type="radio" name="gender" id="female_radio" value="female">Female<br/>
+				pass<input type="password" name="pass1"/>
+				retype pass<input type="password" name="pass2"/>
+				horoscope
+				<select name="horoscope">
+					<option value="aries">Aries</option>
+					<option value="taurus">Taurus</option>
+					<option value="gemini">Gemini</option>
+					<option value="cancer">Cancer</option>
+					<option value="leo">Leo</option>
+					<option value="virgo">Virgo</option>
+					<option value="libra">Libra</option>
+					<option value="scorpio">Scorpio</option>
+					<option value="sagittarius">Sagittarius</option>
+					<option value="capricorn">Capricorn</option>
+					<option value="aquarius">Aquarius</option>
+					<option value="pisces">Pisces</option>
+				</select>
+				
+				<input type="button" onClick ="submitSignUp()" value="submit"/>
+			</form>	
+			___LOG IN___<br/>
+			<form name="log_in">
+				name<input type="text" name="name"/><br/>
+				pass<input type="password" name="pass"/>
+				<input type="button" onClick ="submitLogIn()" value="submit"/>
+			</form>
+			___UPDATE PRIVACY___<br/>
+			<form name="update_privacy"/>
+				name<input type="text" name="name"/>
+				old pass<input type="password" name="old_pass"/>
+				new pass<input type="password" name="new_pass"/>
+				new pass 2<input type="password" name="new_pass2"/>
+				<input type="button" onClick ="submitUpdatePrivacy()" value="submit"/>
+			</form>	
+			___UPDATE ANSWER___<br/>
+			<form name="update_answer"/>
+				pass<input type="password" name="pass"/>
+				c1<input type="text" name="c1"/>
+				c2<input type="text" name="c2"/>
+				c3<input type="text" name="c3"/>
+				c4<input type="text" name="c4"/>
+				<input type="button" onClick ="submitUpdateAnswer()" value="submit"/>
+			</form>
+			___NEW PLANE___<br/>
+			<form name="new_plane"/>
+				<input type="radio" name="d3" value="music">Music<br>
+				<input type="radio" name="d3" value="movie">Movie<br>
+				<input type="radio" name="d3" value="reading">Reading<br>
+				<input type="radio" name="d3" value="eating">Eating<br>	
+				
+				c1<input type="text" name="c1"/>
+				c2<input type="text" name="c2"/>
+				c3<input type="text" name="c3"/>
+				c4<input type="text" name="c4"/>
+				<input type= "button" onClick = "submitNewPlane()" value="submit"/>
+			</form>
+			___NEW MSG___<br/>
+			<form name="new_message"/>
+				name2<input type="text" name="name2"/>
+				title<input type="text" name="title"/>
+				content<input type="text" name="content"/>
+				<input type= "button" onClick = "submitNewMessage()" value="submit"/>
+			</form>
+			___NEW BUZZ___<br/>
+			<form name="buzz"/>
+				text<input type="text" name="content"/>
+				<input type= "button" onClick = "submitBuzz()" value="submit"/>
+			</form>
+			___PAPER___<br/>
+			<form name="paper"/>
+				buy<input type="text" name="buy"/>
+				sell<input type="text" name="sell"/>
+				<input type= "button" onClick = "submitPaper()" value="submit"/>
+			</form>	
+	</div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jQuery\jQuery.js"></script>
+		<script src=""></script>
+		<script src="js\jStorage.js"></script>
+		<script src="js\script_v2.js"></script>
+		<script src="js\CUSER_check.js"></script>
+		<script src="jQuery\test.js"></script>
+		<script>
+			setTimeout(function(){
+				showInbox();
+				showOutbox();
+			},500);
+			
+		</script>
+		<link rel="stylesheet" href="css\message.css"/>
+		<link rel="stylesheet" href="css\global.css"/>
+	</head>
+	<body>
+		<!--FUELBAR-->
+		<div id="fuelbar">FUEL<br><div id = "show_fuelbar_num"></div></div>
+		<!--NAVBAR-->
+		<div id='navbar'>
+			<ul><div id='main'>MENU</div>
+				<a href="index.html"><li class="navtab" id="n1">Index</li></a>
+				<a href="buzz.html"><li class="navtab" id="n2">Buzz</li></a>
+				<a href="about.html"><li class="navtab" id="n3">About</li></a>
+				<li class="navtab_big" id="nb2">PLANE
+					<ul>
+						<a href="hangar.html"><li class="navtab" id="n4">Hangar</li></a>
+						<a href="p2.html"><li class="navtab" id="n5">P2</li></a>
+						<a href="sky.html"><li class="navtab" id="n6">Sky</li></a>
+					</ul>
+				</li>
+				<li class="navtab_big" id="nb1">USER
+					<ul>
+						<a href="user_home.html"><li class="navtab" id="n7">Home</li></a>
+						<a href="message.html"><li class="navtab" id="n8">Message</li></a>
+						<a href="settings.html"><li class="navtab" id="n9">Settings</li></a>
+						<a href="#" onClick="logOut()"><li class="navtab" id="n10">Logout</li></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h1>Messages</h1>
+		<div id="new_message_box">
+			<strong>Compose New Message</strong>
+			<form name="new_message"/>
+				To: <input type="text" name="name2"/><br>
+				title: <input type="text" name="title"/><br>
+				content: <input type="text" name="content"/><br>
+				<input type= "button" onClick = "submitNewMessage()" value="Compose"/>
+			</form>	
+		</div>
+		<div id="show_message_box">
+			<strong>Message Details</strong>
+			<div>
+			
+			</div>
+		</div>
+		
+		<div class="in_out_box" id="inbox_box">
+			<strong>Inbox</strong>
+			<div id="show_inbox"></div>
+		</div>
+		
+		<div class="in_out_box" id="outbox_box">
+			<strong>Outbox</strong>
+			<div id="show_outbox">asf</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+
+body{
+	font-family:myriad pro;
+}
+h1{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:700px;
+	margin: -280px 0 0 -420px;
+	font-family:Myriad pro;
+	font-size:40px;
+	background: -webkit-linear-gradient(right, white 5%,grey);
+	height:60px;
+	padding:20px;
+	line-height:60px;
+}
+
+#new_buzz_box{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:680px;
+	height:30px;
+	padding:10px;
+	margin: -180px 0 0 -420px;
+	background-color:papayawhip;
+}
+#show_buzz_box{
+	position:fixed;
+	left:50%;
+	top:50%;
+	padding:10px;
+	width:680px;
+	height:400px;
+	margin: -130px 0 0 -420px;
+	background-color:palegreen;
+}
+#buzz_obj{
+
+}

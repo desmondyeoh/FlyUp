@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jQuery\test.js"></script>
+		<script src="jQuery\jQuery.js"></script>
+		<script src="jQuery\sign_up.js"></script>
+		<script src="js\jStorage.js"></script>
+		<script src="js\script_v2.js"></script>
+		<link rel="stylesheet" href="css\sign_up.css"/>
+		<link rel="stylesheet" href="css\global.css"/>
+	</head>
+	<body>
+		<!--FUELBAR-->
+		<div id="fuelbar">FUEL<br><div id = "show_fuelbar_num"></div></div>
+		<!--NAVBAR-->
+		<div id='navbar'>
+			<ul><div id='main'>MENU</div>
+				<a href="index.html"><li class="navtab" id="n1">Index</li></a>
+				<a href="buzz.html"><li class="navtab" id="n2">Buzz</li></a>
+				<a href="about.html"><li class="navtab" id="n3">About</li></a>
+				<li class="navtab_big" id="nb2">PLANE
+					<ul>
+						<a href="hangar.html"><li class="navtab" id="n4">Hangar</li></a>
+						<a href="p2.html"><li class="navtab" id="n5">P2</li></a>
+						<a href="sky.html"><li class="navtab" id="n6">Sky</li></a>
+					</ul>
+				</li>
+				<li class="navtab_big" id="nb1">USER
+					<ul>
+						<a href="user_home.html"><li class="navtab" id="n7">Home</li></a>
+						<a href="message.html"><li class="navtab" id="n8">Message</li></a>
+						<a href="settings.html"><li class="navtab" id="n9">Settings</li></a>
+						<a href="#" onClick="logOut()"><li class="navtab" id="n10">Logout</li></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="header">Sign Up</div>
+		<div class="container">
+			
+			<div id="male">
+				<img src="img\male.gif"></img>
+			</div>
+			<div id="female">
+				<img src="img\female.gif"></img>
+			</div>
+			
+			
+			<form name="sign_up" class="form_box">
+				<br/>___SIGN UP___<br/>
+				name<input type="text" name="name"/><br/>
+				gender<input type="radio" name="gender" id="male_radio" value="male"checked>Male
+				<input type="radio" name="gender" id="female_radio" value="female">Female<br/>
+				pass<input type="password" name="pass1"/><br/>
+				retype pass<input type="password" name="pass2"/><br/>
+								horoscope
+				<select name="horoscope">
+					<option value="aries">Aries</option>
+					<option value="taurus">Taurus</option>
+					<option value="gemini">Gemini</option>
+					<option value="cancer">Cancer</option>
+					<option value="leo">Leo</option>
+					<option value="virgo">Virgo</option>
+					<option value="libra">Libra</option>
+					<option value="scorpio">Scorpio</option>
+					<option value="sagittarius">Sagittarius</option>
+					<option value="capricorn">Capricorn</option>
+					<option value="aquarius">Aquarius</option>
+					<option value="pisces">Pisces</option>
+				</select>
+				<input type="button" onClick ="submitSignUp()" value="submit"/>
+			</form>
+		</div>
+	</body>
+</html>

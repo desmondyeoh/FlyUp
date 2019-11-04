@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<script src="jQuery\jQuery.js"></script>
+		<script src="jQuery\user_home.js"></script>
+		<script src="js\jStorage.js"></script>
+		<script src="js\script_v2.js"></script>
+		<script src="js\CUSER_check.js"></script>
+		<script src="jQuery\test.js"></script>
+		<script>
+			setTimeout(function(){
+				document.getElementById("main").innerHTML="<span>Welcome back,<br/>"+USER[CUI].name+"!</span>";
+			},100);
+		</script>
+
+		<link rel="stylesheet" href="css\user_home.css"/>
+		
+	</head>
+	<body>
+	 
+	<script>$("body").addClass("hide");</script>
+		<!--FUELBAR-->
+		
+		<div id="fuelbar">FUEL<br><div id = "show_fuelbar_num"></div></div>
+		<div class="navi_group">
+			<a><div class="navi" id="main"></div></a>
+			<div class="navi" id="user">USER</div>
+			<div class="navi" id="plane">PLANE</div>
+			<a href="hangar.html"><div class="navi" id="hangar"><span>hangar</span></div></a>
+			<a href="p2.html"><div class="navi" id="p2"><span>p2</span></div></a>
+			<a href="sky.html"><div class="navi" id="sky"><span>sky</span></div></a>
+			<a href="buzz.html"><div class="navi"id="buzz"><span>buzz</span></div></a>
+			<a href="message.html"><div class="navi"id="message"><span>message</span></div></a>
+			<a href="settings.html"><div class="navi" id="settings"><span>settings</span></div></a>
+			<a href="about.html"><div class="navi" id="about"><span>about</span></div></a>
+			<a href="index.html"><div class="navi" id="index"><span>home</span></div></a>
+			<a href="#" onClick="logOut()"><div class="navi" id="logout"><span>logout</span></div></a>
+		</div>
+		
+		
+		
+	
+	</body>
+</html>

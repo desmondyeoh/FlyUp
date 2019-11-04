@@ -1,0 +1,235 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-family:myriad pro,corbel,arial;
+	height:100%;
+}
+div{
+	display:inline;
+}
+h1{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:700px;
+	margin: -280px 0 0 -420px;
+	font-family:Myriad pro;
+	font-size:40px;
+	background: -webkit-linear-gradient(right, white 5%,grey);
+	height:60px;
+	padding:20px;
+	line-height:60px;
+}
+
+.new_plane_box{
+	display:none;
+}
+.show_plane_box{
+	display:none;
+}
+.buy_paper_box{
+	display:none;
+}
+.fuel_plane_box{
+	display:none;
+}
+/*New Plane Box CSS*/
+.plane_obj img{
+	width:380px;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -40px 0 0 -400px;
+	-webkit-animation: rollPlane 5s infinite;
+	opacity:0.7;
+}
+.plane_obj img:hover{
+	opacity:1;
+	-webkit-animation-play-state:paused;
+}
+.new_plane_form{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -120px 0 0 10px;
+	width:300px;
+	height:390px;
+	padding:10px;
+	background-color:cadetblue;
+	
+}
+
+
+/*Show Plane Box CSS*/
+#hangar_plane_box{
+	position:fixed;
+	background-color:khaki;
+	border:2px dashed burlywood;
+	border-radius:2px;
+	left:50%;
+	top:50%;
+	margin: -120px 0 0  -420px;
+	width:535px;
+	min-height:340px;
+}
+#details_container{
+	position:fixed;
+	border:1px solid black;
+	left:50%;
+	top:50%;
+	margin: -120px 0 0  130px;
+	width:190px;
+	height:340px;
+	z-index:1;
+}
+.hangar_plane_obj{
+	width:115px;
+	height:110px;
+	padding:6px;
+	margin:2px;
+	display:inline-block;
+	background-color:khaki;
+}
+.hangar_plane_obj img{
+	width:110px;
+	-webkit-animation:hangarPlane 5s infinite linear;
+}
+.hangar_plane_obj img:hover{
+	-webkit-animation:hangarPlaneQuick 2s infinite linear;
+}
+.details_box img{
+	width:150px;
+	margin-top:10px;
+	-webkit-animation:hangarPlane 5s infinite linear;
+}
+.hangar_plane_obj:hover +.details_box{
+	display:block;	
+}
+.details_box{
+	width:170px;
+	height:340px;
+	display:none;
+	position:fixed;
+	padding:0 10px ;
+	left:50%;
+	top:50%;
+	margin: -120px 0 0  130px;
+	background-color:lavender;
+	z-index:2;
+	border:1px solid black;
+}
+#fuelHP:hover, #flyHP:hover, #landHP:hover,#delHP:hover{
+	color:red;
+	text-decoration:underline;
+}
+@-webkit-keyframes rollPlane{
+	0% {-webkit-transform: rotate(-20deg);}
+	50%{-webkit-transform: rotate(15deg);}
+	100%{-webkit-transform: rotate(-20deg);}
+}
+@-webkit-keyframes vibratePlane{
+	0% {-webkit-transform: rotate(-50deg);}
+	50%{-webkit-transform: rotate(50deg);}
+	100%{-webkit-transform: rotate(-50deg);}
+}
+@-webkit-keyframes hangarPlane{
+	0% {-webkit-transform: rotate(-5deg);}
+	50%{-webkit-transform: rotate(5deg);}
+	100%{-webkit-transform: rotate(-5deg);}
+}
+@-webkit-keyframes hangarPlaneQuick{
+	0% {-webkit-transform: rotate(-10deg);}
+	25%{-webkit-transform: rotate(10deg);}
+	50%{-webkit-transform: rotate(-10deg);}
+	75%{-webkit-transform: rotate(10deg);}
+	100%{-webkit-transform: rotate(-10deg);}
+}
+
+/*Buy Paper Box CSS*/
+
+.paper_form{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:240px;
+	padding:5px 10px;
+	height:350px;
+	margin:-180px 0 0 -130px;
+	background-color:lightcyan;
+	border:2px dashed cyan;
+	z-index:5;
+}
+.paper_form form:before{
+	margin:5px 0;
+	content:"paper";
+	width:150px;
+	height:230px;
+	display:inline-block;
+	background-color:burlywood;
+}
+.paper_form form{
+	margin:5px 45px;
+}
+
+
+/*Fuel Plane CSS*/
+.fuel_plane{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:240px;
+	height:310px;
+	padding:10px;
+	margin:-180px 0 0 -130px;
+	background-color:lightcyan;
+	border:2px dashed cyan;
+}
+#show_fuel_process{
+	margin:5px 40px;
+	content:"paper";
+	width:150px;
+	height:230px;
+	display:inline-block;
+	background-color:burlywood;
+	color:white;
+	text-align:center;
+	line-height:220px;
+	font-size:40px;
+	-webkit-animation: fuelPlaneProcess 5s infinite linear;
+}
+@-webkit-keyframes fuelPlaneProcess{
+	0%{background:olive;}
+	33%{background:steelblue;}
+	67%{background:maroon;}
+	100%{background:olive;}
+}
+/*NAVBAR2*/
+#navbar2{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-top:-180px;
+	margin-left:-350px;
+}
+#navbar2 ul, #navbar2 li{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+}
+#navbar2 li{
+	width:200px;
+	margin-top:10px ;
+	height:40px;
+	background-color:aquamarine;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	text-align:center;
+	line-height:30px;
+}
+#navbar2 li:hover{
+	background-color:skyblue;
+	color:white;
+}

@@ -1,0 +1,170 @@
+a{
+	text-decoration:none;
+	color:black;
+}
+body{
+
+}
+#title{
+	color:purple;
+	font-family:myriad pro;
+	font-size:120px;
+	line-height:270px;
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:300px;
+	height:300px;
+	margin-left:-180px;
+	margin-top:-180px;
+	padding:60px;
+	z-index:2;
+	background-color:black;
+	border-radius:210px;
+}
+#plane_box{
+	animation:rotate_plane 5s linear infinite;
+	-webkit-animation: rotate_plane 5s linear infinite;
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:350px;
+	height:350px;
+	background-color:gold;
+	z-index:0;
+	margin-top:-190px;
+	margin-left:-220px;
+	border-radius:215px;
+	z-index:0;
+}
+#plane img{
+	width:110px;
+	margin:-100px;
+	-webkit-transform:rotate(-90deg) scaleX(-1);
+}
+.user_box{
+}
+.user{
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	line-height:190px;
+	background-color:grey;
+	text-align:center;
+	margin:10px;
+	position:fixed;
+	font-family:helvetica;
+	z-index:3;
+	-webkit-animation: rotate_small 5s infinite linear
+}
+#sign_up{
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	font-size:35px;
+	line-height:190px;
+	left:50%;
+	top:50%;
+	margin-left:-270px;
+	margin-top:-240px;
+	background-color:orchid;
+}
+#log_in{
+	width:124px;
+	height:124px;
+	border-radius:62px;
+	line-height:110px;
+	bottom:50%;
+	right:50%;
+	margin-bottom:-250px;
+	margin-right:-280px;
+	background-color:darkviolet;
+}
+#about{
+	width:150px;
+	height:150px;
+	line-height:150px;
+	background-color:thistle;
+	right:50%;
+	top:50%;
+	margin-right:-300px;
+	margin-top:-220px;
+	z-index:2;
+}
+
+@keyframes animate{
+	0%   {background: red; left:0px; top:0px;}
+	25%  {background: yellow; left:20px; top:0px;}
+	50%  {background: blue; left:20px; top:20px;}
+	75%  {background: green; left:0px; top:20px;}
+	100% {background: red; left:0px; top:0px;}
+}
+ @-webkit-keyframes animate{
+	0%   {background: red; }
+	25%  {background: yellow; }
+	50%  {background: blue; }
+	75%  {background: green;}
+	100% {background: red; }
+ }
+ @-webkit-keyframes rotate_plane{
+	0% {-webkit-transform:rotate(360deg);}
+	100% {-webkit-transform:rotate(0deg);}
+ }
+@-webkit-keyframes  rotate_small{
+	0% {-webkit-transform:rotate(-10deg);}
+	50% {-webkit-transform:rotate(20deg);}
+	100% {-webkit-transform:rotate(-10deg);}
+}
+/*Form box style*/
+.form_box{
+	font-family:arial;
+	font-size:14px;
+	line-height:30px;
+	display:none;
+	background-color:white;
+	border:2px dotted violet;
+	border-radius:15px;
+	height:130px;
+	width:200px;
+	padding:5px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-top :-65px;
+	margin-left : -100px;
+	z-index:4;
+	text-align:center;
+}
+.form_box input{
+	width:150px;
+}
+#x{
+	text-align:right;
+	margin:0px;
+	padding:0px;
+	display:inline;
+}
+
+/*
+Helvetica
+Gotham
+DIN
+Futura
+Neo Sans
+Adobe Caslon
+Skolar
+Kautiva
+Caecilia
+Fedra Sans
+
+Myriad Pro
+League Gothic
+Cabin
+Corbel
+Museo Slab
+Bebas Neue
+Ubuntu
+Lobster
+Franchise
+PT Serif
+*/

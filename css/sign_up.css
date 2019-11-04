@@ -1,0 +1,58 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.container{
+	width:750px;
+	border:1px solid black;
+	margin:auto;
+	margin-top:20px;
+}
+/*Header*/
+#header{
+	height:50px;
+	width:250px;
+	border-radius:125px;
+	background-color:red;
+	margin:auto;
+	text-align:center;
+	line-height:45px;
+	font-family:arial;
+	font-size:30px;
+}
+/*Form box style*/
+.form_box{
+	/*format the form box*/
+	float:left;
+}
+
+/*male,female pic*/
+#male,#female{
+	float:left;
+}
+#female{
+}
+
+/*
+Helvetica
+Gotham
+DIN
+Futura
+Neo Sans
+Adobe Caslon
+Skolar
+Kautiva
+Caecilia
+Fedra Sans
+
+Myriad Pro
+League Gothic
+Cabin
+Corbel
+Museo Slab
+Bebas Neue
+Ubuntu
+Lobster
+Franchise
+PT Serif
+*/

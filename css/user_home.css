@@ -1,0 +1,209 @@
+*{
+	padding:0px;
+	margin:0px;
+	
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+.navi_group{
+}
+.tr{
+}
+.navi{
+	width:60px;
+	height:60px;
+	padding:10px;
+	border-radius:1000px;
+	background-color:grey;
+	font-family:Myriad pro;
+	text-align:center;
+	color:black;
+	position:fixed;
+	left:50%;
+	top:50%;
+	-webkit-animation: swing 3s infinite linear;
+}
+.navi_group #main span{
+	height:300px;
+	width:300px;
+	text-align:center;	
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/*MESSAGE.........
+Teow, adjust position of small circles below here...
+adjust position->margin-left,margin-right
+adjust size -> width,height
+adjust text align -> line-height
+adjust background-color too!
+
+*/
+#main{
+	width:300px;
+	height:300px;
+	border-radius:190px;
+	font-size:40px;
+	left:50%;
+	top:50%;
+	margin-top:-150px;
+	margin-left:-150px;
+	-webkit-animation:none;
+	z-index:3;
+	background-color:#F08080;
+	border:solid 1px #8B0000;
+	
+}
+
+#user{
+	width:230px;
+	height:230px;
+	margin-top:-140px;
+	margin-left:100px;
+	font-size:30px;
+	line-height:220px;
+	z-index:2;
+	background-color:#EE82EE;
+	border:solid 1px #C71585;
+	
+	
+}
+#logout{
+	width:50px;
+	height:50px;
+	margin-top:90px;
+	margin-left:200px;
+	line-height:45px;
+	background-color:#D2691E;
+}
+
+#logout:hover{
+	opacity:0.6;
+}
+
+#settings{
+	margin-top:-10px;
+	margin-left:320px;
+	width:90px;
+	height:90px;
+	line-height:85px;
+	background-color:#DC143C;
+	
+}
+
+#settings:hover{
+	opacity:0.6;
+}
+
+#plane{
+	width:190px;
+	height:190px;
+	margin-top:-150px;
+	margin-left:-310px;
+	font-size:30px;
+	line-height:190px;
+	z-index:2;
+	background-color:#EE82EE;
+	border:solid 1px #C71585;
+}
+#sky{
+	width:100px;
+	height:100px;
+	line-height:100px;
+	margin-top:-150px;
+	margin-left:-380px;
+	background-color:#FF7F50;
+}
+
+#sky:hover{
+	opacity:0.6;
+}
+
+#p2{
+	width:50px;
+	height:50px;
+	line-height:40px;
+	margin-top:30px;
+	margin-left:-280px;
+	background-color:#20B2AA;
+}
+#p2:hover{
+	opacity:0.6;
+}
+
+#hangar{
+	width:80px;
+	height:80px;
+	line-height:70px;
+	margin-top:-225px;
+	margin-left:-260px;
+	background-color:#6A5ACD;
+	
+}
+
+#hangar:hover{
+	opacity:0.6;
+}
+
+#message{
+	margin-top:-200px;
+	margin-left:250px;
+	width:110px;
+	height:110px;
+	line-height:100px;
+	background-color:#7FFFD4;
+}
+
+#message:hover{
+	opacity:0.6;
+}
+
+#buzz{
+	width:80px;
+	height:80px;
+	line-height:60px;
+	margin-top:-210px;
+	margin-left:-70px;
+	background-color:#ADFF2F;
+}
+
+#buzz:hover{
+	opacity:0.6;
+}
+
+#about{
+	width:70px;
+	height:70px;
+	line-height:60px;
+	margin-top:120px;
+	margin-left:-120px;
+	background-color:#FF00FF;
+}
+
+#about:hover{
+	opacity:0.6;
+}
+
+#index{
+	line-height:65px;
+	margin-top:120px;
+	margin-left:55px;
+	
+	background-color:#E6E6FA;
+}
+
+#index:hover{
+	opacity:0.6;
+}
+
+@-webkit-keyframes swing{
+	0% {-webkit-transform:rotate(-3deg);}
+	50%{-webkit-transform:rotate(10deg);}
+	100% {-webkit-transform:rotate(-3deg);}
+}
+
+body.hide #myHidden-div{
+  opacity: 0;
+}

@@ -1,0 +1,96 @@
+h1{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:700px;
+	margin: -280px 0 0 -420px;
+	font-family:Myriad pro;
+	font-size:40px;
+	background: -webkit-linear-gradient(right, white 5%,grey);
+	height:60px;
+	padding:20px;
+	line-height:60px;
+}
+#sky_plane{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -280px 0 0 -420px;
+}
+.sky_plane_obj{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -100px 0 0 -550px;
+	padding:10px;
+	display:block;
+}
+.sky_plane_obj img{
+	width:190px;
+	margin:  0 -80px 0px 0;
+	-webkit-transform:rotate(20deg);
+}
+.sky_plane_obj span{
+	color:red;
+}
+#sp1{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -100px 0 0 -200px;
+	-webkit-animation: flyPlane1 10s infinite linear;
+}
+#sp2{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: 0px 0 0 0px;
+	-webkit-animation: flyPlane2 10s infinite linear;
+}
+#sp3{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: -100px 0 0 -80px;
+	-webkit-animation: flyPlane3 10s infinite linear;
+}
+
+#sp4{
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin: 70px 0 0 -50px;
+	-webkit-animation: flyPlane4 10s infinite linear;
+}
+#sp1 img {width:180px;}
+#sp3 img {width:250px;}
+@-webkit-keyframes flyPlane1{
+	0%{left:0%;top:50%;-webkit-transform:rotate(-20deg);}
+	50%{left:50%; top:30%;}
+	65%{left:60%; top:30%;}
+	100%{left:120%;top:20%;-webkit-transform:rotate(10deg);}
+}
+@-webkit-keyframes flyPlane2{
+	0%{left:-20%;top:60%;-webkit-transform:rotate(-20deg);}
+	50%{left:30%; top:40%;}
+	60%{left:40%; top:40%}
+	90%{left:70%}
+	100%{left:120%;top:20%;-webkit-transform:rotate(10deg);}
+}
+@-webkit-keyframes flyPlane3{
+	0%{left:0%;top:80%;-webkit-transform:rotate(-20deg);}
+	30%{left:50%; top:40%;}
+	50%{left:60%; top:40%;}
+	100%{left:120%;top:40%;-webkit-transform:rotate(10deg);}
+}
+@-webkit-keyframes flyPlane4{
+	0%{left:-20%;top:70%;-webkit-transform:rotate(-20deg);}
+	30%{left:20%; top:50%;}
+	60%{left:60%; top:45%}
+	100%{left:120%;top:40%;-webkit-transform:rotate(10deg);}
+}
+#sky_mar {
+	z-index:-1;
+	width:2000px;
+	height:100%;
+}
