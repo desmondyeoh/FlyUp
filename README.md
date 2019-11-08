@@ -1,5 +1,6 @@
 # FlyUp
 *Winning Project to Silicon Valley - FlyUp (A social media for strangers)* . 
+[https://flyup.dyeoh.com](https://flyup.dyeoh.com)
 
 This is a project I did when I was in my Form 4 (16 years old) for a national-level coding bootcamp (D-CODE).  
 Inspired by one of the ice-breaking games during the bootcamp, I decided to make it into a website.  
